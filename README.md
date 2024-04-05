@@ -21,5 +21,7 @@ vim9script
 
 import "alcedo.vim"
 
+colorscheme alcedo
+
 alcedo.MakeBackgroundTransparent()
 ```

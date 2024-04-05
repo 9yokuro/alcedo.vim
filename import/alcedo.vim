@@ -1,6 +1,10 @@
 vim9script
 
 export def MakeBackgroundTransparent(): void
+  if g:loaded_alcedo == 0 || g:colors_name != "alcedo"
+    return
+  endif
+
   const groups: list<string> = [
     "FoldColumn",
     "SignColumn",
