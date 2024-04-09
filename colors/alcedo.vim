@@ -128,18 +128,18 @@ execute "highlight Question " .. fg_blue .. bg_none .. bold
 highlight link QuickFixLine Search
 execute "highlight Search " .. fg_black .. bg_blue .. none
 execute "highlight SpecialKey " .. fg_blue .. bg_none .. none
-execute "highlight SpellBad " .. fg_none .. bg_none .. undercurl
-highlight link SpellCap SpellBad
-highlight link SpellLocal SpellBad
-highlight link SpellRare SpellBad
+execute "highlight SpellBad guisp=NONE " .. fg_none .. bg_none .. undercurl
+execute "highlight SpellCap guisp=NONE " .. fg_none .. bg_none .. undercurl
+execute "highlight SpellLocal guisp=NONE " .. fg_none .. bg_none .. undercurl
+execute "highlight SpellRare guisp=NONE " .. fg_none .. bg_none .. undercurl
 execute "highlight StatusLine " .. fg_white .. bg_none .. none
 execute "highlight StatusLineNC " .. fg_white .. bg_none .. none
-highlight link StatusLineTerm StatusLine
-highlight link StatusLineTermNC StatusLineNC
+execute "highlight StatusLineTerm " .. fg_white .. bg_none .. none
+execute "highlight StatusLineTermNC " .. fg_white .. bg_none .. none
 execute "highlight TabLine " .. fg_white .. bg_black .. underline
 execute "highlight TabLineFill " .. fg_none .. bg_none .. reverse
 execute "highlight TabLineSel " .. fg_none .. bg_none .. bold
-execute "highlight Title " .. fg_black .. bg_none .. bold
+execute "highlight Title " .. fg_blue .. bg_none .. bold
 execute "highlight Visual " .. fg_black .. bg_blue .. none
 execute "highlight WarningMsg " .. fg_yellow .. bg_none .. none
 highlight link Whitespace NonText
